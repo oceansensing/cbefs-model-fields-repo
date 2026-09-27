@@ -3,14 +3,35 @@
 The CBEFS **fields** — a data repository of the oceansensing ocean map system: its own
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
-**Nothing is published yet** (2026-09-27). `PLAN.md` is the founding plan;
+**Built and rehearsed 2026-09-27; not yet live** (it waits on the owner's
+secrets). `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
-## What it will publish
+## What it publishes
 
 The Chesapeake Bay Environmental Forecasting System's **physical scalar**
 fields: temperature and salinity at the surface and the bottom, and water
 level.
+
+| root | quantity |
+| --- | --- |
+| `sst-cbefs.json` | surface temperature |
+| `sss-cbefs.json` | surface salinity |
+| `ssh-cbefs.json` | water level (`zeta`) |
+| `bottomt-cbefs.json` | bottom temperature |
+| `bottoms-cbefs.json` | bottom salinity |
+
+The daily mean stamped noon UTC on today's date. About 0.8 MB each, 3.7 MB a
+tree (measured 2026-09-27).
+
+Every root is one regional grid at 0.007 degree (336 x 438, `regional:
+true`), `source: Chesapeake Bay Environmental Forecast System (CBEFS),
+Virginia Institute of Marine Science` — the citation the data's license asks
+for. **A bottom root is s-level 0** (ROMS counts from the seabed up), and its
+header carries no depth, as Mercator's `bottomt` does not. The fetcher is the
+site's `scripts/fetch-cbefs.py`, shared by the three CBEFS repositories and
+scoped here with `--only=`; the workflow is dispatch-only until its first
+dispatched run publishes.
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports
