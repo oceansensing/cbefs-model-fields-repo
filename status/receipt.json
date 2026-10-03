@@ -1,0 +1,30 @@
+{
+ "schema": 1,
+ "generated": "2026-10-03T20:00:34Z",
+ "mode": "full",
+ "fates": {
+  "sst-cbefs": "held",
+  "sss-cbefs": "held",
+  "ssh-cbefs": "held",
+  "bottomt-cbefs": "held",
+  "bottoms-cbefs": "held"
+ },
+ "reasons": {
+  "sst-cbefs": "step cbefs exit 1",
+  "sss-cbefs": "step cbefs exit 1",
+  "ssh-cbefs": "step cbefs exit 1",
+  "bottomt-cbefs": "step cbefs exit 1",
+  "bottoms-cbefs": "step cbefs exit 1"
+ },
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": [
+  "sst-cbefs (32.0 h, held)",
+  "sss-cbefs (32.0 h, held)",
+  "ssh-cbefs (32.0 h, held)",
+  "bottomt-cbefs (32.0 h, held)",
+  "bottoms-cbefs (32.0 h, held)"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "bottomt-cbefs",
+ "title": "CBEFS bottom temperature",
+ "fate": "held",
+ "reason": "step cbefs exit 1",
+ "checked": "2026-10-02T07:30:00Z",
+ "updated": "2026-10-02T01:38:49Z",
+ "hour": "2026-10-02T12:00:00Z",
+ "modelRun": "2026-10-01T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-02T12:00:00Z"
+ ],
+ "files": {
+  "bottomt-cbefs.json": {
+   "bytes": 777991,
+   "sha256": "d180dc8f368103dd64f92fd1e7072ef7c9feebd54d14f74bbe74df2cfe23e145"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "bottoms-cbefs",
+ "title": "CBEFS bottom salinity",
+ "fate": "held",
+ "reason": "step cbefs exit 1",
+ "checked": "2026-10-02T07:30:00Z",
+ "updated": "2026-10-02T01:38:49Z",
+ "hour": "2026-10-02T12:00:00Z",
+ "modelRun": "2026-10-01T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-02T12:00:00Z"
+ ],
+ "files": {
+  "bottoms-cbefs.json": {
+   "bytes": 775388,
+   "sha256": "abd30f2702c458746a2c017fb52c6c9574927ad226dd19a98c40eaa31c179218"
+  }
+ }
+}
