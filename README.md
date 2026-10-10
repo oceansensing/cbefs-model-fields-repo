@@ -37,6 +37,17 @@ These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports
 them when they fall behind, which is how their health stays visible.
 
+## Published to R2 alone (since 2026-10-10)
+
+Declared `r2_only` in `pipeline/products.toml`: the same run builds these,
+they are left out of this repository's Pages site and its status, and the R2
+job publishes them beside the rest (the site pipeline's D13, its note of
+2026-10-09). Their roots stay on the `published` branch, as every product's do.
+
+| root | quantity | grid |
+| --- | --- | --- |
+| `bottomdepth-cbefs.json` | level 0's depth below the free surface, m (beside `bottomt-cbefs` and `bottoms-cbefs`) | 0.007 degree, `regional: true` |
+
 ## Where the data comes from
 
 **Source, read 2026-09-26/27**: VIMS publishes CBEFS output openly, with no
