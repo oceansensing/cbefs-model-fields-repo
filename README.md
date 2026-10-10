@@ -47,6 +47,8 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | root | quantity | grid |
 | --- | --- | --- |
 | `bottomdepth-cbefs.json` | level 0's depth below the free surface, m (beside `bottomt-cbefs` and `bottoms-cbefs`) | 0.007 degree, `regional: true` |
+| `temp-cbefs-<depth>m.json` | the temperature at each of the first 17 of Mercator's depths, 0.494 to 40.344 m — every one the bay's water reaches — interpolated from the model's 20 terrain-following levels below the datum; one root a depth named for it to the meter (`-0m` … `-40m`), daily means | 0.007 degree, `regional: true` |
+| `sal-cbefs-<depth>m.json` | the salinity at the same depths, daily means | 0.007 degree, `regional: true` |
 
 ## Where the data comes from
 

@@ -32,7 +32,7 @@ timeout_minutes = 20
 
 # Named after the server all three CBEFS repositories read.
 [steps.cbefs]
-cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs"]
+cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,temp-cbefs,sal-cbefs"]
 lane = "vims-thredds"
 
 [products.sst-cbefs]
@@ -85,3 +85,37 @@ writes = ["bottomdepth-cbefs.json"]
 max_age_hours = 20
 r2_only = true
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomdepth-cbefs"]
+
+# **Temperature at fixed depths, R2's alone** (2026-10-10; the site's fetcher, LEVELS): the model's
+# own levels interpolated to the first 17 of Mercator's depths, every one its
+# water reaches, one root a depth named for it to the meter, below the datum as
+# the model's own fixed slices are -- written by the same step as the rest.
+[products.temp-cbefs]
+title = "CBEFS temperature at Mercator's depths"
+step = "cbefs"
+roots = ["temp-cbefs-0m.json", "temp-cbefs-2m.json", "temp-cbefs-3m.json", "temp-cbefs-4m.json",
+         "temp-cbefs-5m.json", "temp-cbefs-6m.json", "temp-cbefs-8m.json", "temp-cbefs-10m.json",
+         "temp-cbefs-11m.json", "temp-cbefs-13m.json", "temp-cbefs-16m.json", "temp-cbefs-18m.json",
+         "temp-cbefs-22m.json", "temp-cbefs-25m.json", "temp-cbefs-29m.json", "temp-cbefs-34m.json",
+         "temp-cbefs-40m.json"]
+writes = ["temp-cbefs-*m.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=temp-cbefs"]
+
+# **Salinity at fixed depths, R2's alone** (2026-10-10; the site's fetcher, LEVELS): the model's
+# own levels interpolated to the first 17 of Mercator's depths, every one its
+# water reaches, one root a depth named for it to the meter, below the datum as
+# the model's own fixed slices are -- written by the same step as the rest.
+[products.sal-cbefs]
+title = "CBEFS salinity at Mercator's depths"
+step = "cbefs"
+roots = ["sal-cbefs-0m.json", "sal-cbefs-2m.json", "sal-cbefs-3m.json", "sal-cbefs-4m.json",
+         "sal-cbefs-5m.json", "sal-cbefs-6m.json", "sal-cbefs-8m.json", "sal-cbefs-10m.json",
+         "sal-cbefs-11m.json", "sal-cbefs-13m.json", "sal-cbefs-16m.json", "sal-cbefs-18m.json",
+         "sal-cbefs-22m.json", "sal-cbefs-25m.json", "sal-cbefs-29m.json", "sal-cbefs-34m.json",
+         "sal-cbefs-40m.json"]
+writes = ["sal-cbefs-*m.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sal-cbefs"]
