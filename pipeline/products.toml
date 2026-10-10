@@ -32,7 +32,7 @@ timeout_minutes = 20
 
 # Named after the server all three CBEFS repositories read.
 [steps.cbefs]
-cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs"]
+cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs"]
 lane = "vims-thredds"
 
 [products.sst-cbefs]
@@ -74,3 +74,14 @@ roots = ["bottoms-cbefs.json"]
 writes = ["bottoms-cbefs.json"]
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottoms-cbefs"]
+
+# **R2's alone** (2026-10-09, the site pipeline's D13 note): `r2_only` leaves it out of
+# the Pages site and Pages' status; the R2 job publishes it beside the rest.
+[products.bottomdepth-cbefs]
+title = "CBEFS depth of the bottom level"
+step = "cbefs"
+roots = ["bottomdepth-cbefs.json"]
+writes = ["bottomdepth-cbefs.json"]
+max_age_hours = 20
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomdepth-cbefs"]
