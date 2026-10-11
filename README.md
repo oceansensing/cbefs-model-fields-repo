@@ -49,10 +49,18 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | `bottomdepth-cbefs.json` | level 0's depth below the free surface, m (beside `bottomt-cbefs` and `bottoms-cbefs`) | 0.007 degree, `regional: true` |
 | `temp-cbefs-<depth>m.json` | the temperature at each of the first 17 of Mercator's depths, 0.494 to 40.344 m — every one the bay's water reaches — interpolated from the model's 20 terrain-following levels below the datum; one root a depth named for it to the meter (`-0m` … `-40m`), daily means | 0.007 degree, `regional: true` |
 | `sal-cbefs-<depth>m.json` | the salinity at the same depths, daily means | 0.007 degree, `regional: true` |
-| `temp-cbefs-<depth>m-prev.json`, `sal-cbefs-<depth>m-prev.json` | the temperature and salinity at the same depths, the day before (since 2026-10-10): the averages file's record a day earlier, for what a volume gains in a day | 0.007 degree, `regional: true` |
-| `ssh-cbefs-prev.json` | the water level, the day before (since 2026-10-10) | 0.007 degree, `regional: true` |
 | `qnet-cbefs.json` | the surface's net heat flux, W/m², positive into the water: the averages file's own daily mean `shflux` (since 2026-10-10) | 0.007 degree, `regional: true` |
 | `emp-cbefs.json` | evaporation less rain, mm a day: the averages file's own daily means (since 2026-10-10) | 0.007 degree, `regional: true` |
+
+
+**Each grid states the span its values cover** (since 2026-10-10): `validFrom`
+and `validTo` in its header, the interval its daily mean covers — the day round its noon stamp, as ROMS averages.
+**Temperature, salinity and water level publish today and the day ahead**: each
+such root is today's and lists the days it publishes in its header
+(`frames`: each day's time, span, run where there is one, and file); the day
+ahead is the root's name with `.v<its time>` before `.json`
+(`temp-cbefs-11m.v20261012T1200Z.json`), with its own file. A file names one time for as long as it
+exists, and a day no longer published leaves on the next run.
 
 ## Where the data comes from
 
