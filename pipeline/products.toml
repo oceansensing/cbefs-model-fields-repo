@@ -32,7 +32,7 @@ timeout_minutes = 20
 
 # Named after the server all three CBEFS repositories read.
 [steps.cbefs]
-cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,temp-cbefs,sal-cbefs,qnet-cbefs,emp-cbefs"]
+cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,seafloor-cbefs,temp-cbefs,sal-cbefs,qnet-cbefs,emp-cbefs"]
 lane = "vims-thredds"
 
 [products.sst-cbefs]
@@ -85,6 +85,19 @@ writes = ["bottomdepth-cbefs.json"]
 max_age_hours = 20
 r2_only = true
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomdepth-cbefs"]
+
+# **The model's own sea floor, R2's alone** (2026-10-11; the site's fetcher): `h`,
+# the bed below the datum every level here is measured from, binned as each
+# field is. Static while the model's grid is: read each run and written again
+# only when its values change -- so its time is when they were first
+# published, and it has no age budget.
+[products.seafloor-cbefs]
+title = "CBEFS depth of the sea floor"
+step = "cbefs"
+roots = ["seafloor-cbefs.json"]
+writes = ["seafloor-cbefs.json"]
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=seafloor-cbefs"]
 
 # **Temperature at fixed depths, R2's alone** (2026-10-10; the site's fetcher, LEVELS): the model's
 # own levels interpolated to the first 17 of Mercator's depths, every one its
