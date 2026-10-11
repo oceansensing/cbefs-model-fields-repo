@@ -32,7 +32,7 @@ timeout_minutes = 20
 
 # Named after the server all three CBEFS repositories read.
 [steps.cbefs]
-cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,temp-cbefs,sal-cbefs"]
+cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,temp-cbefs,sal-cbefs,temp-cbefs-prev,sal-cbefs-prev,ssh-cbefs-prev,qnet-cbefs,emp-cbefs"]
 lane = "vims-thredds"
 
 [products.sst-cbefs]
@@ -119,3 +119,66 @@ writes = ["sal-cbefs-*m.json"]
 max_age_hours = 30
 r2_only = true
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sal-cbefs"]
+
+# **The day before's temperature, R2's alone** (2026-10-10): the same averages
+# file's record a day earlier, beside today's, so a box's budget has what it
+# gained in a day; one root a depth, today's name with -prev.
+[products.temp-cbefs-prev]
+title = "CBEFS temperature at Mercator's depths, the day before"
+step = "cbefs"
+roots = ["temp-cbefs-0m-prev.json", "temp-cbefs-2m-prev.json", "temp-cbefs-3m-prev.json", "temp-cbefs-4m-prev.json",
+         "temp-cbefs-5m-prev.json", "temp-cbefs-6m-prev.json", "temp-cbefs-8m-prev.json", "temp-cbefs-10m-prev.json",
+         "temp-cbefs-11m-prev.json", "temp-cbefs-13m-prev.json", "temp-cbefs-16m-prev.json", "temp-cbefs-18m-prev.json",
+         "temp-cbefs-22m-prev.json", "temp-cbefs-25m-prev.json", "temp-cbefs-29m-prev.json", "temp-cbefs-34m-prev.json",
+         "temp-cbefs-40m-prev.json"]
+writes = ["temp-cbefs-*m-prev.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=temp-cbefs-prev"]
+
+# **The day before's salinity, R2's alone** (2026-10-10), as the temperature's.
+[products.sal-cbefs-prev]
+title = "CBEFS salinity at Mercator's depths, the day before"
+step = "cbefs"
+roots = ["sal-cbefs-0m-prev.json", "sal-cbefs-2m-prev.json", "sal-cbefs-3m-prev.json", "sal-cbefs-4m-prev.json",
+         "sal-cbefs-5m-prev.json", "sal-cbefs-6m-prev.json", "sal-cbefs-8m-prev.json", "sal-cbefs-10m-prev.json",
+         "sal-cbefs-11m-prev.json", "sal-cbefs-13m-prev.json", "sal-cbefs-16m-prev.json", "sal-cbefs-18m-prev.json",
+         "sal-cbefs-22m-prev.json", "sal-cbefs-25m-prev.json", "sal-cbefs-29m-prev.json", "sal-cbefs-34m-prev.json",
+         "sal-cbefs-40m-prev.json"]
+writes = ["sal-cbefs-*m-prev.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sal-cbefs-prev"]
+
+# **The day before's water level, R2's alone** (2026-10-10): a box's volume
+# gained in a day.
+[products.ssh-cbefs-prev]
+title = "CBEFS water level, the day before"
+step = "cbefs"
+roots = ["ssh-cbefs-prev.json"]
+writes = ["ssh-cbefs-prev.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=ssh-cbefs-prev"]
+
+# **The surface's net heat flux, R2's alone** (2026-10-10): the averages
+# file's own daily mean, W/m2, positive into the water.
+[products.qnet-cbefs]
+title = "CBEFS net surface heat flux"
+step = "cbefs"
+roots = ["qnet-cbefs.json"]
+writes = ["qnet-cbefs.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=qnet-cbefs"]
+
+# **Evaporation less rain, R2's alone** (2026-10-10): the averages file's own
+# daily means, mm a day.
+[products.emp-cbefs]
+title = "CBEFS evaporation less rain"
+step = "cbefs"
+roots = ["emp-cbefs.json"]
+writes = ["emp-cbefs.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=emp-cbefs"]
