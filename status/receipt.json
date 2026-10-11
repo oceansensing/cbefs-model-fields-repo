@@ -1,0 +1,23 @@
+{
+ "schema": 1,
+ "generated": "2026-10-11T04:53:13Z",
+ "mode": "full",
+ "fates": {
+  "sst-cbefs": "fresh",
+  "sss-cbefs": "fresh",
+  "ssh-cbefs": "fresh",
+  "bottomt-cbefs": "fresh",
+  "bottoms-cbefs": "fresh",
+  "bottomdepth-cbefs": "fresh",
+  "temp-cbefs": "fresh",
+  "sal-cbefs": "fresh",
+  "qnet-cbefs": "fresh",
+  "emp-cbefs": "fresh"
+ },
+ "reasons": {},
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": []
+}

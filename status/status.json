@@ -1,0 +1,250 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-11T04:53:13Z",
+ "mode": "full",
+ "run": {
+  "id": "38112973558",
+  "url": "https://github.com/oceansensing/cbefs-model-fields-repo/actions/runs/38112973558"
+ },
+ "schedule": {
+  "crons": [
+   "7 1,7,13,19 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "sst-cbefs": {
+   "title": "CBEFS surface temperature",
+   "roots": [
+    "sst-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T01:43:45Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "sss-cbefs": {
+   "title": "CBEFS surface salinity",
+   "roots": [
+    "sss-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T01:43:45Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "ssh-cbefs": {
+   "title": "CBEFS water level",
+   "roots": [
+    "ssh-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T04:48:55Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "bottomt-cbefs": {
+   "title": "CBEFS bottom temperature",
+   "roots": [
+    "bottomt-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T01:43:45Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "bottoms-cbefs": {
+   "title": "CBEFS bottom salinity",
+   "roots": [
+    "bottoms-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T01:43:45Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "bottomdepth-cbefs": {
+   "title": "CBEFS depth of the bottom level",
+   "roots": [
+    "bottomdepth-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T01:43:45Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "temp-cbefs": {
+   "title": "CBEFS temperature at Mercator's depths",
+   "roots": [
+    "temp-cbefs-0m.json",
+    "temp-cbefs-2m.json",
+    "temp-cbefs-3m.json",
+    "temp-cbefs-4m.json",
+    "temp-cbefs-5m.json",
+    "temp-cbefs-6m.json",
+    "temp-cbefs-8m.json",
+    "temp-cbefs-10m.json",
+    "temp-cbefs-11m.json",
+    "temp-cbefs-13m.json",
+    "temp-cbefs-16m.json",
+    "temp-cbefs-18m.json",
+    "temp-cbefs-22m.json",
+    "temp-cbefs-25m.json",
+    "temp-cbefs-29m.json",
+    "temp-cbefs-34m.json",
+    "temp-cbefs-40m.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T04:48:55Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "sal-cbefs": {
+   "title": "CBEFS salinity at Mercator's depths",
+   "roots": [
+    "sal-cbefs-0m.json",
+    "sal-cbefs-2m.json",
+    "sal-cbefs-3m.json",
+    "sal-cbefs-4m.json",
+    "sal-cbefs-5m.json",
+    "sal-cbefs-6m.json",
+    "sal-cbefs-8m.json",
+    "sal-cbefs-10m.json",
+    "sal-cbefs-11m.json",
+    "sal-cbefs-13m.json",
+    "sal-cbefs-16m.json",
+    "sal-cbefs-18m.json",
+    "sal-cbefs-22m.json",
+    "sal-cbefs-25m.json",
+    "sal-cbefs-29m.json",
+    "sal-cbefs-34m.json",
+    "sal-cbefs-40m.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T04:48:55Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "qnet-cbefs": {
+   "title": "CBEFS net surface heat flux",
+   "roots": [
+    "qnet-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T03:13:53Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  },
+  "emp-cbefs": {
+   "title": "CBEFS evaporation less rain",
+   "roots": [
+    "emp-cbefs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-11T04:53:13Z",
+   "updated": "2026-10-11T03:13:53Z",
+   "hour": "2026-10-11T12:00:00Z",
+   "modelRun": "2026-10-10T00:00:00Z",
+   "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+   "hours": [
+    "2026-10-11T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 7.11,
+   "nearestOffsetHours": -7.11
+  }
+ }
+}

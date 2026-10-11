@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sss-cbefs",
+ "title": "CBEFS surface salinity",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-11T04:53:13Z",
+ "updated": "2026-10-11T01:43:45Z",
+ "hour": "2026-10-11T12:00:00Z",
+ "modelRun": "2026-10-10T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-11T12:00:00Z"
+ ],
+ "files": {
+  "sss-cbefs.json": {
+   "bytes": 774729,
+   "sha256": "049dc2401e1b2ea8eafd05352b012365f1f0df8980b6f609bf782500a4a6b6a4"
+  }
+ }
+}
