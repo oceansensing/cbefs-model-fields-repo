@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "emp-cbefs",
+ "title": "CBEFS evaporation less rain",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-17T13:18:56Z",
+ "updated": "2026-10-17T13:18:56Z",
+ "hour": "2026-10-17T12:00:00Z",
+ "modelRun": "2026-10-17T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-17T12:00:00Z"
+ ],
+ "files": {
+  "emp-cbefs.json": {
+   "bytes": 777807,
+   "sha256": "46120ebbb1ca869339dd2e3d568fe89a767acb46926975351dadf8f97f62cf19"
+  }
+ }
+}
