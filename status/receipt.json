@@ -1,0 +1,48 @@
+{
+ "schema": 1,
+ "generated": "2026-10-24T19:15:57Z",
+ "mode": "full",
+ "fates": {
+  "sst-cbefs": "held",
+  "sss-cbefs": "held",
+  "ssh-cbefs": "held",
+  "bottomt-cbefs": "held",
+  "bottoms-cbefs": "held",
+  "bottomdepth-cbefs": "held",
+  "seafloor-cbefs": "held",
+  "temp-cbefs": "held",
+  "sal-cbefs": "held",
+  "qnet-cbefs": "held",
+  "emp-cbefs": "held"
+ },
+ "reasons": {
+  "sst-cbefs": "step cbefs exit 1",
+  "sss-cbefs": "step cbefs exit 1",
+  "ssh-cbefs": "step cbefs exit 1",
+  "bottomt-cbefs": "step cbefs exit 1",
+  "bottoms-cbefs": "step cbefs exit 1",
+  "bottomdepth-cbefs": "step cbefs exit 1",
+  "seafloor-cbefs": "step cbefs exit 1",
+  "temp-cbefs": "step cbefs exit 1",
+  "sal-cbefs": "step cbefs exit 1",
+  "qnet-cbefs": "step cbefs exit 1",
+  "emp-cbefs": "step cbefs exit 1"
+ },
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": [
+  "sst-cbefs (127.3 h, held)",
+  "sss-cbefs (127.3 h, held)",
+  "ssh-cbefs (127.3 h, held)",
+  "bottomt-cbefs (127.3 h, held)",
+  "bottoms-cbefs (127.3 h, held)",
+  "bottomdepth-cbefs (127.3 h, held)",
+  "temp-cbefs (127.3 h, held)",
+  "sal-cbefs (127.3 h, held)",
+  "qnet-cbefs (127.3 h, held)",
+  "emp-cbefs (127.3 h, held)"
+ ],
+ "tile_keys": {}
+}

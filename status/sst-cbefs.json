@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "sst-cbefs",
+ "title": "CBEFS surface temperature",
+ "fate": "held",
+ "reason": "step cbefs exit 1",
+ "checked": "2026-10-19T07:38:09Z",
+ "updated": "2026-10-19T01:36:18Z",
+ "hour": "2026-10-19T12:00:00Z",
+ "modelRun": "2026-10-18T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-19T12:00:00Z"
+ ],
+ "files": {
+  "sst-cbefs.json": {
+   "bytes": 778066,
+   "sha256": "4dd5d99ffcb7957d3b8a9551e5bd1f1ba3ab7553e6833e9c02f310dadbd7cc20"
+  }
+ }
+}
