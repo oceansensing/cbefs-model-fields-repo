@@ -1,0 +1,136 @@
+{
+ "schema": 1,
+ "product": "sal-cbefs",
+ "title": "CBEFS salinity at Mercator's depths",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T19:11:35Z",
+ "updated": "2026-10-31T13:12:59Z",
+ "hour": "2026-10-31T12:00:00Z",
+ "modelRun": "2026-10-31T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-31T12:00:00Z"
+ ],
+ "files": {
+  "sal-cbefs-0m.json": {
+   "bytes": 775677,
+   "sha256": "6b1cf362baf349791d383ac0be3778e00e2ef851b8d508e52d24aaf39837a0f4"
+  },
+  "sal-cbefs-0m.v20261101T1200Z.json": {
+   "bytes": 775440
+  },
+  "sal-cbefs-10m.json": {
+   "bytes": 760557,
+   "sha256": "83cc975223927130bd2b9fa77e4a1bba739b5b9c21aa2b6b967a440c7f68606f"
+  },
+  "sal-cbefs-10m.v20261101T1200Z.json": {
+   "bytes": 760201
+  },
+  "sal-cbefs-11m.json": {
+   "bytes": 758051,
+   "sha256": "25497cf7899c2ad589c9bf01a7eafdd29df9f524a8473e4cdc0af49ba67f19f9"
+  },
+  "sal-cbefs-11m.v20261101T1200Z.json": {
+   "bytes": 757723
+  },
+  "sal-cbefs-13m.json": {
+   "bytes": 755019,
+   "sha256": "cdd3feaaa4f172a82f3066063c14ba4aa1cbe66baf444fa01285011824fd20ab"
+  },
+  "sal-cbefs-13m.v20261101T1200Z.json": {
+   "bytes": 754701
+  },
+  "sal-cbefs-16m.json": {
+   "bytes": 752487,
+   "sha256": "42a8c813a6a714a54ab844178ae643767b40f4ea9a5ae3c2b879123ff35d4d26"
+  },
+  "sal-cbefs-16m.v20261101T1200Z.json": {
+   "bytes": 752076
+  },
+  "sal-cbefs-18m.json": {
+   "bytes": 749747,
+   "sha256": "4311ca9a9896334a11cba6c6a0707e73c9f746f4a9c04148e7c57532786a0e3e"
+  },
+  "sal-cbefs-18m.v20261101T1200Z.json": {
+   "bytes": 749453
+  },
+  "sal-cbefs-22m.json": {
+   "bytes": 746898,
+   "sha256": "d79e488cf247e4f0b1c15234b8e48bd27db32e14c674a5a0501538c8e2f69af7"
+  },
+  "sal-cbefs-22m.v20261101T1200Z.json": {
+   "bytes": 746584
+  },
+  "sal-cbefs-25m.json": {
+   "bytes": 744192,
+   "sha256": "c1a3d98f54ae8f2ff4f91e6d68524547c95c13afe19ea2a8fd5ea5ba8b8bf4c8"
+  },
+  "sal-cbefs-25m.v20261101T1200Z.json": {
+   "bytes": 743800
+  },
+  "sal-cbefs-29m.json": {
+   "bytes": 740724,
+   "sha256": "de6dcf907ba047c20d0c78d91bd9044229d66276b5f1cf74c3754d2a45fcff10"
+  },
+  "sal-cbefs-29m.v20261101T1200Z.json": {
+   "bytes": 740361
+  },
+  "sal-cbefs-2m.json": {
+   "bytes": 774165,
+   "sha256": "e5890a1a3d63923399a3dc6cf7b650f63967768d99a05174097479caa7374a9a"
+  },
+  "sal-cbefs-2m.v20261101T1200Z.json": {
+   "bytes": 773849
+  },
+  "sal-cbefs-34m.json": {
+   "bytes": 737523,
+   "sha256": "5dbd0cb0bf880b85e9e92184bfc307d28f889fa25dfc6ad73e944abe44a96ef1"
+  },
+  "sal-cbefs-34m.v20261101T1200Z.json": {
+   "bytes": 737158
+  },
+  "sal-cbefs-3m.json": {
+   "bytes": 771528,
+   "sha256": "845ca50c64971092642770f3e9a28d71b8d9a22e3075a5572e52c7d7e5fcc543"
+  },
+  "sal-cbefs-3m.v20261101T1200Z.json": {
+   "bytes": 771197
+  },
+  "sal-cbefs-40m.json": {
+   "bytes": 736611,
+   "sha256": "19fa8dc39268f33399d79965b26006861e7cc7c3405e3115faa1dab6f18162c8"
+  },
+  "sal-cbefs-40m.v20261101T1200Z.json": {
+   "bytes": 736243
+  },
+  "sal-cbefs-4m.json": {
+   "bytes": 769467,
+   "sha256": "6e12fd174fb5d26c6d478c571700cd95ab19a6b84452eecd75d35072406b658b"
+  },
+  "sal-cbefs-4m.v20261101T1200Z.json": {
+   "bytes": 769197
+  },
+  "sal-cbefs-5m.json": {
+   "bytes": 767332,
+   "sha256": "9b334c72dfe4166dbc4649bba265e5548db5c3e55993c5c2df822dbacfd46bda"
+  },
+  "sal-cbefs-5m.v20261101T1200Z.json": {
+   "bytes": 767127
+  },
+  "sal-cbefs-6m.json": {
+   "bytes": 765115,
+   "sha256": "69d3f49a812933515648a599033a91a1f1997374b7be7fab0cb2518f9c315562"
+  },
+  "sal-cbefs-6m.v20261101T1200Z.json": {
+   "bytes": 764694
+  },
+  "sal-cbefs-8m.json": {
+   "bytes": 762854,
+   "sha256": "afcad61420c645efdaf1e07adad74c3cf4587c0eb22d5623b1a8d6f0a927ce91"
+  },
+  "sal-cbefs-8m.v20261101T1200Z.json": {
+   "bytes": 762470
+  }
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "schema": 1,
+ "product": "temp-cbefs",
+ "title": "CBEFS temperature at Mercator's depths",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T19:11:35Z",
+ "updated": "2026-10-31T13:12:59Z",
+ "hour": "2026-10-31T12:00:00Z",
+ "modelRun": "2026-10-31T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-31T12:00:00Z"
+ ],
+ "files": {
+  "temp-cbefs-0m.json": {
+   "bytes": 778172,
+   "sha256": "31bf61109ab6f17e87bb025417f42bafbfcb87f0f5b72376ff152f817ff3126e"
+  },
+  "temp-cbefs-0m.v20261101T1200Z.json": {
+   "bytes": 777855
+  },
+  "temp-cbefs-10m.json": {
+   "bytes": 760791,
+   "sha256": "c7929cddf2af5a7a29ccac84e56b1eff2eaf33adb434a15ec40048fab3bbea3f"
+  },
+  "temp-cbefs-10m.v20261101T1200Z.json": {
+   "bytes": 760416
+  },
+  "temp-cbefs-11m.json": {
+   "bytes": 758317,
+   "sha256": "7176f3e6b491e26e6212f22f4b5f09a78a707c00e8bef8f28804d2fe6b9f5587"
+  },
+  "temp-cbefs-11m.v20261101T1200Z.json": {
+   "bytes": 757991
+  },
+  "temp-cbefs-13m.json": {
+   "bytes": 755208,
+   "sha256": "9c232689bb8e5cd9a31becc1ffcbec1fa9318ff3d02859073586fe6ac5979a4b"
+  },
+  "temp-cbefs-13m.v20261101T1200Z.json": {
+   "bytes": 754831
+  },
+  "temp-cbefs-16m.json": {
+   "bytes": 752469,
+   "sha256": "dfbd6a0a91dac4ad17187b716ee00ed9cb5699c40d90f51413698b4cc90da631"
+  },
+  "temp-cbefs-16m.v20261101T1200Z.json": {
+   "bytes": 752199
+  },
+  "temp-cbefs-18m.json": {
+   "bytes": 749931,
+   "sha256": "b5474f15e1ab18c5925ebf5aae7f3a305e1a33e29536e53f71033711ebddd58a"
+  },
+  "temp-cbefs-18m.v20261101T1200Z.json": {
+   "bytes": 749613
+  },
+  "temp-cbefs-22m.json": {
+   "bytes": 747026,
+   "sha256": "a370c63b5c0758579de382ac27508436bb74467cf00ce9c0fb80068f153e54f9"
+  },
+  "temp-cbefs-22m.v20261101T1200Z.json": {
+   "bytes": 746663
+  },
+  "temp-cbefs-25m.json": {
+   "bytes": 744264,
+   "sha256": "87401c78119422fde8d45c3fcdcf2bbdc44a320c7540ae6accc99c170b034702"
+  },
+  "temp-cbefs-25m.v20261101T1200Z.json": {
+   "bytes": 743949
+  },
+  "temp-cbefs-29m.json": {
+   "bytes": 740752,
+   "sha256": "f76d69f8dc4e97213b4dc22d4cbac586609092ddb481e2c2ec8b057d2f6ffa43"
+  },
+  "temp-cbefs-29m.v20261101T1200Z.json": {
+   "bytes": 740413
+  },
+  "temp-cbefs-2m.json": {
+   "bytes": 776294,
+   "sha256": "f026d91c455c229452d41be2670366c24acbb622c452350be4fd60a87afb6028"
+  },
+  "temp-cbefs-2m.v20261101T1200Z.json": {
+   "bytes": 775948
+  },
+  "temp-cbefs-34m.json": {
+   "bytes": 737543,
+   "sha256": "b5b5e24c3ac34eeeb89c6d0f73b90baf1a7ee5e1340506be81c0e9a60d83ed8a"
+  },
+  "temp-cbefs-34m.v20261101T1200Z.json": {
+   "bytes": 737141
+  },
+  "temp-cbefs-3m.json": {
+   "bytes": 772934,
+   "sha256": "c31c5838a2572a6c3faf57899bbe518d2f40c6e9f65d22dbe98293f5301656c6"
+  },
+  "temp-cbefs-3m.v20261101T1200Z.json": {
+   "bytes": 772613
+  },
+  "temp-cbefs-40m.json": {
+   "bytes": 736619,
+   "sha256": "a5e522cba6812f3587056d5651d9122d6f44026c59164e1b79fe4d3f7b575c72"
+  },
+  "temp-cbefs-40m.v20261101T1200Z.json": {
+   "bytes": 736248
+  },
+  "temp-cbefs-4m.json": {
+   "bytes": 770629,
+   "sha256": "0145743e0a00d474f50e501960df150e3b7bc97b9b2f7339ab636602f58e7cdb"
+  },
+  "temp-cbefs-4m.v20261101T1200Z.json": {
+   "bytes": 770211
+  },
+  "temp-cbefs-5m.json": {
+   "bytes": 768018,
+   "sha256": "abdeb8b2ebce6b963f11b3b5c71331bb179bbc4a0d172e6083a4c59cf4e54f8e"
+  },
+  "temp-cbefs-5m.v20261101T1200Z.json": {
+   "bytes": 767732
+  },
+  "temp-cbefs-6m.json": {
+   "bytes": 765559,
+   "sha256": "c96ad861160c075a1f755ce29052959295eec734fd2e5b56f989fec83ebd1ca1"
+  },
+  "temp-cbefs-6m.v20261101T1200Z.json": {
+   "bytes": 765286
+  },
+  "temp-cbefs-8m.json": {
+   "bytes": 763163,
+   "sha256": "5d58b99e13795b30e70dc88ac55ae41bb4d1a8de608057b44b4cf7db3c6fd5b2"
+  },
+  "temp-cbefs-8m.v20261101T1200Z.json": {
+   "bytes": 762763
+  }
+ }
+}

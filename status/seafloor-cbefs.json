@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "seafloor-cbefs",
+ "title": "CBEFS depth of the sea floor",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T19:11:35Z",
+ "updated": "2026-10-11T20:05:09Z",
+ "hour": "2026-10-11T12:00:00Z",
+ "modelRun": "2026-10-11T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-11T12:00:00Z"
+ ],
+ "files": {
+  "seafloor-cbefs.json": {
+   "bytes": 757152,
+   "sha256": "ed52e0f060c0e7c7b422e3284992feb1703adaaa9e4506987402a8136cb9865c"
+  }
+ }
+}

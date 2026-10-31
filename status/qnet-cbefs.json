@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "qnet-cbefs",
+ "title": "CBEFS net surface heat flux",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T19:11:35Z",
+ "updated": "2026-10-31T13:12:59Z",
+ "hour": "2026-10-31T12:00:00Z",
+ "modelRun": "2026-10-31T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-10-31T12:00:00Z"
+ ],
+ "files": {
+  "qnet-cbefs.json": {
+   "bytes": 819412,
+   "sha256": "f980cd1e6f503d18c328965726225f5427578c14baa7680698c1756eccec1e0f"
+  }
+ }
+}
