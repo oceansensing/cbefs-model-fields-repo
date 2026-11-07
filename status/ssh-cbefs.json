@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "ssh-cbefs",
+ "title": "CBEFS water level",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-07T07:14:00Z",
+ "updated": "2026-11-07T01:14:26Z",
+ "hour": "2026-11-07T12:00:00Z",
+ "modelRun": "2026-11-05T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-07T12:00:00Z"
+ ],
+ "files": {
+  "ssh-cbefs.json": {
+   "bytes": 808583,
+   "sha256": "82aee2c373096e5d642aca4217dc0227698842d4211cc9d34069a35eadc5853c"
+  },
+  "ssh-cbefs.v20261108T1200Z.json": {
+   "bytes": 818470
+  }
+ }
+}
