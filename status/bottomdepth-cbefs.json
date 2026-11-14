@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "bottomdepth-cbefs",
+ "title": "CBEFS depth of the bottom level",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-14T19:11:57Z",
+ "updated": "2026-11-14T19:11:57Z",
+ "hour": "2026-11-14T12:00:00Z",
+ "modelRun": "2026-11-14T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-14T12:00:00Z"
+ ],
+ "files": {
+  "bottomdepth-cbefs.json": {
+   "bytes": 715311,
+   "sha256": "c9b37bae54b632b10757e38b393e67807d1e37f58e089f06846be35114da842f"
+  }
+ }
+}
