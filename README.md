@@ -60,7 +60,16 @@ such root is today's and lists the days it publishes in its header
 (`frames`: each day's time, span, run where there is one, and file); the day
 ahead is the root's name with `.v<its time>` before `.json`
 (`temp-cbefs-11m.v20261012T1200Z.json`), with its own file. A file names one time for as long as it
-exists, and a day no longer published leaves on the next run.
+exists. The other days are `moreFrames`' (below).
+
+## The times either side (since 2026-11-21)
+
+Every product that changes with time publishes two days ahead and one behind
+(DECISIONS D3). A root's header lists them in `frames`, as it did before that
+day, and `moreFrames`, every time added; together, each time once. Every
+dated file (`<root's name>.v<its time>.json`) is R2's alone: none is on Pages
+or the `published` branch, and R2 keeps one while a root lists it and for an
+hour after.
 
 ## Where the data comes from
 

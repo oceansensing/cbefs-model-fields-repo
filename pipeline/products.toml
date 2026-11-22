@@ -34,12 +34,17 @@ timeout_minutes = 20
 [steps.cbefs]
 cmd = ["python3", "scripts/fetch-cbefs.py", "--only=sst-cbefs,sss-cbefs,ssh-cbefs,bottomt-cbefs,bottoms-cbefs,bottomdepth-cbefs,seafloor-cbefs,temp-cbefs,sal-cbefs,qnet-cbefs,emp-cbefs"]
 lane = "vims-thredds"
+timeout_minutes = 30
 
 [products.sst-cbefs]
 title = "CBEFS surface temperature"
 step = "cbefs"
 roots = ["sst-cbefs.json"]
-writes = ["sst-cbefs.json"]
+writes = ["sst-cbefs.json", "sst-cbefs.v*.json"]
+r2_only = ["sst-cbefs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sst-cbefs"]
 
@@ -47,7 +52,11 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sst-cbe
 title = "CBEFS surface salinity"
 step = "cbefs"
 roots = ["sss-cbefs.json"]
-writes = ["sss-cbefs.json"]
+writes = ["sss-cbefs.json", "sss-cbefs.v*.json"]
+r2_only = ["sss-cbefs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sss-cbefs"]
 
@@ -56,6 +65,10 @@ title = "CBEFS water level"
 step = "cbefs"
 roots = ["ssh-cbefs.json"]
 writes = ["ssh-cbefs.json", "ssh-cbefs.v*.json"]
+r2_only = ["ssh-cbefs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=ssh-cbefs"]
 
@@ -63,7 +76,11 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=ssh-cbe
 title = "CBEFS bottom temperature"
 step = "cbefs"
 roots = ["bottomt-cbefs.json"]
-writes = ["bottomt-cbefs.json"]
+writes = ["bottomt-cbefs.json", "bottomt-cbefs.v*.json"]
+r2_only = ["bottomt-cbefs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomt-cbefs"]
 
@@ -71,7 +88,11 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomt
 title = "CBEFS bottom salinity"
 step = "cbefs"
 roots = ["bottoms-cbefs.json"]
-writes = ["bottoms-cbefs.json"]
+writes = ["bottoms-cbefs.json", "bottoms-cbefs.v*.json"]
+r2_only = ["bottoms-cbefs.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 20
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottoms-cbefs"]
 
@@ -81,9 +102,12 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottoms
 title = "CBEFS depth of the bottom level"
 step = "cbefs"
 roots = ["bottomdepth-cbefs.json"]
-writes = ["bottomdepth-cbefs.json"]
+writes = ["bottomdepth-cbefs.json", "bottomdepth-cbefs.v*.json"]
 max_age_hours = 20
 r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=bottomdepth-cbefs"]
 
 # **The model's own sea floor, R2's alone** (2026-10-11; the site's fetcher): `h`,
@@ -114,6 +138,9 @@ roots = ["temp-cbefs-0m.json", "temp-cbefs-2m.json", "temp-cbefs-3m.json", "temp
 writes = ["temp-cbefs-*m.json", "temp-cbefs-*m.v*.json"]
 max_age_hours = 30
 r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=temp-cbefs"]
 
 # **Salinity at fixed depths, R2's alone** (2026-10-10; the site's fetcher, LEVELS): the model's
@@ -131,6 +158,9 @@ roots = ["sal-cbefs-0m.json", "sal-cbefs-2m.json", "sal-cbefs-3m.json", "sal-cbe
 writes = ["sal-cbefs-*m.json", "sal-cbefs-*m.v*.json"]
 max_age_hours = 30
 r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sal-cbefs"]
 
 # **Temperature, salinity and water level publish today and the day ahead**
@@ -144,9 +174,12 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=sal-cbe
 title = "CBEFS net surface heat flux"
 step = "cbefs"
 roots = ["qnet-cbefs.json"]
-writes = ["qnet-cbefs.json"]
+writes = ["qnet-cbefs.json", "qnet-cbefs.v*.json"]
 max_age_hours = 30
 r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=qnet-cbefs"]
 
 # **Evaporation less rain, R2's alone** (2026-10-10): the averages file's own
@@ -155,7 +188,10 @@ namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=qnet-cb
 title = "CBEFS evaporation less rain"
 step = "cbefs"
 roots = ["emp-cbefs.json"]
-writes = ["emp-cbefs.json"]
+writes = ["emp-cbefs.json", "emp-cbefs.v*.json"]
 max_age_hours = 30
 r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 namespace = ["python3", "scripts/fetch-cbefs.py", "--namespace", "--only=emp-cbefs"]
