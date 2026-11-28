@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "sst-cbefs",
+ "title": "CBEFS surface temperature",
+ "fate": "held",
+ "reason": "step cbefs: upstream failed \u2014 ! the VIMS THREDDS server failed after 5 tries: HTTP 503 for https://tds.vims.edu/thredds/catalog/abever/ECB_FORECAST_HR/AVERAGES/catalog.xml",
+ "checked": "2026-11-26T13:16:00Z",
+ "updated": "2026-11-26T01:16:29Z",
+ "hour": "2026-11-26T12:00:00Z",
+ "modelRun": "2026-11-25T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-26T12:00:00Z"
+ ],
+ "files": {
+  "sst-cbefs.json": {
+   "bytes": 777987,
+   "sha256": "a25997df824e3a64b131abc9bdde92f51ac21283e9856efea673d0893259695d"
+  },
+  "sst-cbefs.v20261126T1200Z.json": {
+   "bytes": 777264
+  }
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "sss-cbefs",
+ "title": "CBEFS surface salinity",
+ "fate": "held",
+ "reason": "step cbefs: upstream failed \u2014 ! the VIMS THREDDS server failed after 5 tries: HTTP 503 for https://tds.vims.edu/thredds/catalog/abever/ECB_FORECAST_HR/AVERAGES/catalog.xml",
+ "checked": "2026-11-26T13:16:00Z",
+ "updated": "2026-11-26T01:16:29Z",
+ "hour": "2026-11-26T12:00:00Z",
+ "modelRun": "2026-11-25T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-26T12:00:00Z"
+ ],
+ "files": {
+  "sss-cbefs.json": {
+   "bytes": 776624,
+   "sha256": "53c46d66aa706fa16eb5b303b331d42aa3ea8f3734b14efb54ee0e782c3521f7"
+  },
+  "sss-cbefs.v20261126T1200Z.json": {
+   "bytes": 775901
+  }
+ }
+}

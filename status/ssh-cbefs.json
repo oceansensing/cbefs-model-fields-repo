@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "product": "ssh-cbefs",
+ "title": "CBEFS water level",
+ "fate": "held",
+ "reason": "step cbefs: upstream failed \u2014 ! the VIMS THREDDS server failed after 5 tries: HTTP 503 for https://tds.vims.edu/thredds/catalog/abever/ECB_FORECAST_HR/AVERAGES/catalog.xml",
+ "checked": "2026-11-26T13:16:00Z",
+ "updated": "2026-11-26T01:16:29Z",
+ "hour": "2026-11-26T12:00:00Z",
+ "modelRun": "2026-11-25T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-26T12:00:00Z"
+ ],
+ "files": {
+  "ssh-cbefs.json": {
+   "bytes": 789628,
+   "sha256": "b5a5c8a0e455905e4f759179efda3daf49ba485ec2d1e7443c8515d8bfe4d9e8"
+  },
+  "ssh-cbefs.v20261126T1200Z.json": {
+   "bytes": 788894
+  }
+ }
+}

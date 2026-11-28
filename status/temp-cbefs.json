@@ -1,0 +1,136 @@
+{
+ "schema": 1,
+ "product": "temp-cbefs",
+ "title": "CBEFS temperature at Mercator's depths",
+ "fate": "held",
+ "reason": "step cbefs: upstream failed \u2014 ! the VIMS THREDDS server failed after 5 tries: HTTP 503 for https://tds.vims.edu/thredds/catalog/abever/ECB_FORECAST_HR/AVERAGES/catalog.xml",
+ "checked": "2026-11-26T13:16:00Z",
+ "updated": "2026-11-26T01:16:29Z",
+ "hour": "2026-11-26T12:00:00Z",
+ "modelRun": "2026-11-25T00:00:00Z",
+ "source": "Chesapeake Bay Environmental Forecast System (CBEFS), Virginia Institute of Marine Science",
+ "hours": [
+  "2026-11-26T12:00:00Z"
+ ],
+ "files": {
+  "temp-cbefs-0m.json": {
+   "bytes": 777973,
+   "sha256": "6c5454b12a041029c665d7f5ef0e0510207d800b02eb40dbce00e324f7653420"
+  },
+  "temp-cbefs-0m.v20261126T1200Z.json": {
+   "bytes": 777223
+  },
+  "temp-cbefs-10m.json": {
+   "bytes": 761148,
+   "sha256": "460ee2c1b28b71fabe631ce70e88f3a810ad41a5d5872e2a8834227dc28a6e48"
+  },
+  "temp-cbefs-10m.v20261126T1200Z.json": {
+   "bytes": 760394
+  },
+  "temp-cbefs-11m.json": {
+   "bytes": 758683,
+   "sha256": "ae09968ddeb2397fd25c9d0218ca267acbd16e7ec25dde957c14b050746437f4"
+  },
+  "temp-cbefs-11m.v20261126T1200Z.json": {
+   "bytes": 757929
+  },
+  "temp-cbefs-13m.json": {
+   "bytes": 755670,
+   "sha256": "7d64c7c97221f671fb62fa54daa6d9e2e096f9deab102f98e2eb4069fbe5223e"
+  },
+  "temp-cbefs-13m.v20261126T1200Z.json": {
+   "bytes": 754916
+  },
+  "temp-cbefs-16m.json": {
+   "bytes": 752898,
+   "sha256": "65de045fb099412e04a93a660fa60be783770d3a9d73b3df8391aa26116e8f20"
+  },
+  "temp-cbefs-16m.v20261126T1200Z.json": {
+   "bytes": 752144
+  },
+  "temp-cbefs-18m.json": {
+   "bytes": 750289,
+   "sha256": "9eca16c4b1e30a4c3eb9f2d3a0d5dada7b3a9427a51ad01447aac4158f21ff0f"
+  },
+  "temp-cbefs-18m.v20261126T1200Z.json": {
+   "bytes": 749535
+  },
+  "temp-cbefs-22m.json": {
+   "bytes": 747425,
+   "sha256": "687410f1f5071c3c820eddaa97a4dde38e1f60a1b46f82994dd3f9606bb3410a"
+  },
+  "temp-cbefs-22m.v20261126T1200Z.json": {
+   "bytes": 746671
+  },
+  "temp-cbefs-25m.json": {
+   "bytes": 744709,
+   "sha256": "8480e7879a05618486c83b42ef68c36b4ed83755b9582baebed0d00b9ec99796"
+  },
+  "temp-cbefs-25m.v20261126T1200Z.json": {
+   "bytes": 743955
+  },
+  "temp-cbefs-29m.json": {
+   "bytes": 741133,
+   "sha256": "7cea51d4c455f99a0db7e5b6a8f1819d40fbb922731211d9d4475e8b3c9f7485"
+  },
+  "temp-cbefs-29m.v20261126T1200Z.json": {
+   "bytes": 740379
+  },
+  "temp-cbefs-2m.json": {
+   "bytes": 776072,
+   "sha256": "24640defc28d1ab58494fc2a014446ecd34547aeac41e06aad44cd9a5ecfb305"
+  },
+  "temp-cbefs-2m.v20261126T1200Z.json": {
+   "bytes": 775322
+  },
+  "temp-cbefs-34m.json": {
+   "bytes": 737912,
+   "sha256": "a00074e1962a7ed40617f1d384c81391ce201b15ddad6c8c38630137f89e2adc"
+  },
+  "temp-cbefs-34m.v20261126T1200Z.json": {
+   "bytes": 737158
+  },
+  "temp-cbefs-3m.json": {
+   "bytes": 773249,
+   "sha256": "7ce5d78f4eb523e2f1f0867b4692939aeeb1a01518288c5a42383f603c1b94fd"
+  },
+  "temp-cbefs-3m.v20261126T1200Z.json": {
+   "bytes": 772499
+  },
+  "temp-cbefs-40m.json": {
+   "bytes": 737004,
+   "sha256": "ee890f81649e7d22a61fbec69204c1067a899b130c0234a868ec939009874cc6"
+  },
+  "temp-cbefs-40m.v20261126T1200Z.json": {
+   "bytes": 736250
+  },
+  "temp-cbefs-4m.json": {
+   "bytes": 771056,
+   "sha256": "256e6e33aef5de007e7389f836220896d67ecce396ea3da53432531d8622a232"
+  },
+  "temp-cbefs-4m.v20261126T1200Z.json": {
+   "bytes": 770306
+  },
+  "temp-cbefs-5m.json": {
+   "bytes": 768524,
+   "sha256": "af8aa84e27bbf01c34964dbf3bb2a85af223b271e9b4e25f86b3789bc78d9bee"
+  },
+  "temp-cbefs-5m.v20261126T1200Z.json": {
+   "bytes": 767774
+  },
+  "temp-cbefs-6m.json": {
+   "bytes": 765920,
+   "sha256": "5dd6ce9ddd50b1996a791f5aea5c9c92af0fe1e59d9c0749b623460e5ee4c7e9"
+  },
+  "temp-cbefs-6m.v20261126T1200Z.json": {
+   "bytes": 765170
+  },
+  "temp-cbefs-8m.json": {
+   "bytes": 763584,
+   "sha256": "994ce5d66f2e58147e0881758e741643c00c87b91fae1cb365cb989531cb5749"
+  },
+  "temp-cbefs-8m.v20261126T1200Z.json": {
+   "bytes": 762834
+  }
+ }
+}
